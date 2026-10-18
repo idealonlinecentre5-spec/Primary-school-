@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a0101">
+<title>স্কুল</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--k:#0a0101;--o:#ed8b36;--g:#c1c1c1;--b:#2349c6}
+*{box-sizing:border-box}body{margin:0;font-family:'Hind Siliguri','Noto Sans Bengali',sans-serif;background:#f4f5f7;color:#222;line-height:1.7}
+a{color:inherit;text-decoration:none}.w{max-width:1140px;margin:auto;padding:0 14px}
+.tb{background:#0a0a0a;color:#c4c4c4;font-size:14px;padding:4px 0}
+.lh{background:#070707;color:#fff;padding:14px 0}.lh .w{display:flex;align-items:center;gap:14px;justify-content:center;text-align:center}
+.lh .lg{width:76px;height:76px;border-radius:14px;background:#fff;display:grid;place-items:center;font-size:40px;overflow:hidden;flex:none}.lh img{width:100%;height:100%;object-fit:cover}
+.lh h1{margin:0;font-size:clamp(20px,4vw,32px)}.lh small{color:#bbb;display:block;font-size:14px}
+nav{background:var(--k);position:sticky;top:0;z-index:20}nav .w{display:flex;overflow-x:auto;align-items:center}
+nav a,nav button{color:var(--g);padding:12px 15px;white-space:nowrap;background:0;border:0;font:inherit;cursor:pointer}nav a:hover,nav button:hover{color:var(--o)}nav .lgn{margin-left:auto;color:var(--o);font-weight:600}
+.sl{background:#02cfea;position:relative;overflow:hidden;height:clamp(180px,38vw,420px)}.sl .s{position:absolute;inset:0;opacity:0;transition:opacity .8s;display:grid;place-items:center;text-align:center;color:#fff;padding:20px;background-size:cover;background-position:center}.sl .s.on{opacity:1}
+.sl h2{font-size:clamp(24px,5vw,46px);margin:0;text-shadow:0 2px 8px rgba(0,0,0,.5)}.sl p{margin:4px 0 0;font-size:18px;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.mq{background:#0a0a0a;color:#e0e0e0;overflow:hidden;white-space:nowrap;padding:6px 0;margin:10px 0}.mq span{display:inline-block;padding-left:100%;animation:m 30s linear infinite}@keyframes m{to{transform:translateX(-100%)}}
+.hd{background:#0a0000;color:#fff;margin:0 0 10px;padding:8px 14px;font-size:19px}
+.r{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:6px}@media(max-width:860px){.r{grid-template-columns:1fr}}
+.bx{background:#fff;border:1px solid #e2e5ea;padding:14px;margin-bottom:16px}.bx p{margin:0}
+.lk a{display:block;padding:5px 0;border-bottom:1px dashed #ddd}.lk a:hover{color:var(--o)}
+.nb{height:230px;overflow:hidden;position:relative;background:#fff;border:1px solid #e2e5ea;margin-bottom:16px}.nb>div{animation:u 22s linear infinite;padding:8px 12px}.nb:hover>div{animation-play-state:paused}@keyframes u{from{transform:translateY(230px)}to{transform:translateY(-100%)}}
+.nb a{display:block;padding:6px 0;border-bottom:1px solid #eee;cursor:pointer}.nb a:hover{color:var(--o)}
+@media(prefers-reduced-motion:reduce){.mq span,.nb>div{animation:none;padding:0}.nb{overflow:auto}}
+.pr{display:flex;gap:14px;align-items:flex-start}.pr .av{width:120px;height:140px;background:#e8ecf4;display:grid;place-items:center;font-size:44px;flex:none;overflow:hidden}.pr img{width:100%;height:100%;object-fit:cover}@media(max-width:560px){.pr{flex-direction:column}}
+.ed{display:flex;gap:12px;padding:8px 0;border-bottom:1px solid #eee}.ed b{color:var(--o)}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}.c{background:#fff;border:1px solid #e2e5ea;padding:14px;text-align:center}
+.c .av2{width:64px;height:64px;border-radius:50%;background:#e8ecf4;display:grid;place-items:center;font-size:28px;margin:0 auto 6px}.c h4{margin:0}.c small{color:#666}
+.cd{background:#fff;border:1px solid #e2e5ea;border-radius:12px;padding:14px;margin-bottom:12px}.cd h3{margin:0 0 6px;font-size:17px}
+input,select,textarea{width:100%;padding:10px;margin:4px 0 8px;border:1px solid #cfd8e3;border-radius:6px;font:inherit;background:#fff}
+.bt{background:var(--k);color:#fff;border:0;border-radius:6px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer}.bt:hover{background:var(--o)}.bt.s{background:#eee;color:#222}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #cfd8e3;padding:6px 8px;text-align:center}
+.ph{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}.ph img{width:100%;height:140px;object-fit:cover;cursor:zoom-in}
+.ft{background:#474747;color:#fff;padding:26px 0;margin-top:20px}.ft .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}.ft h4{margin:0 0 6px}.ft a{display:block;padding:2px 0;color:#ddd}.ft a:hover{color:var(--o)}
+.bf{background:#0a0202;color:#fff;text-align:center;padding:10px;font-size:14px}.bf a{color:var(--o)}
+.mdl{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:40;display:none;place-items:center;padding:14px}.mdl.on{display:grid}.mdl>div{background:#fff;border-radius:12px;padding:20px;width:min(420px,100%);max-height:88vh;overflow:auto}
+.mdl.big>div{width:min(560px,100%)}.lb img{max-width:96vw;max-height:90vh}
+.ov{position:fixed;inset:0;background:#fff;z-index:50;display:none;flex-direction:column}.ov.on{display:flex}.ov>div{background:var(--k);color:#fff;padding:8px 14px;display:flex;justify-content:space-between;align-items:center}.ov iframe{flex:1;border:0;width:100%}
+#tt{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:9px 16px;border-radius:8px;display:none;z-index:60}
+:focus-visible{outline:3px solid var(--o);outline-offset:2px}
+</style></head><body>
+<div class="tb"><div class="w">স্বাগতম আমাদের স্কুলে</div></div>
+<div class="lh"><div class="w"><div class="lg" id="lg">🏫</div><div><h1 id="sn"></h1><small id="sa"></small></div></div></div>
+<nav><div class="w"><a href="#top">🏠 হোম</a><a href="#about">আমাদের সম্পর্কে</a><a href="#teachers">পরিচালনা/শিক্ষক</a><a href="#subjects">বিষয়</a><a href="#notice">নোটিশ</a><a href="#gallery">ফটোগ্যালারী</a><a href="#result">রেজাল্ট</a><a href="#admission">ভর্তি</a><a href="#contact">যোগাযোগ</a><button class="lgn" id="lb">🔐 লগইন</button></div></nav>
+<div class="sl" id="sl"></div>
+<div class="w" id="top">
+<div class="mq"><span id="mq">📢 স্বাগতম</span></div>
+<div class="r"><div>
+ <h3 class="hd" id="about">☰ প্রতিষ্ঠানের ইতিহাস</h3><div class="bx"><p id="hist"></p></div>
+ <h3 class="hd">☰ প্রধান শিক্ষকের বাণী</h3><div class="bx pr"><div class="av" id="ha">👤</div><p id="hm"></p></div>
+ <h3 class="hd">☰ সহকারী প্রধান শিক্ষকের বাণী</h3><div class="bx pr"><div class="av" id="aa">👤</div><p id="am2"></p></div>
+ <h3 class="hd">☰ আমাদের শিক্ষা কার্যক্রম</h3><div class="bx" id="edu"></div>
+ <div id="blogw"><h3 class="hd">☰ ব্লগ সমূহ</h3><div class="g" id="blog"></div></div>
+</div><div>
+ <h3 class="hd">☰ গুরুত্বপূর্ণ লিংকসমূহ</h3><div class="bx lk" id="links"></div>
+ <h3 class="hd">☰ নোটিশ বোর্ড</h3><div class="nb"><div id="nb">লোড হচ্ছে…</div></div>
+ <h3 class="hd">☰ ফেসবুকে আমরা</h3><div class="bx"><a id="fbl" target="_blank" rel="noopener" style="color:var(--b);font-weight:600">ফেসবুক পেজ দেখুন →</a></div>
+</div></div>
+
+<h3 class="hd" id="notice">☰ নোটিশ সমূহ</h3><div class="bx" id="nl">লোড হচ্ছে…</div>
+<h3 class="hd" id="teachers">☰ পরিচালনা পরিষদ ও শিক্ষকবৃন্দ</h3><div class="g" id="tl"></div>
+<h3 class="hd" id="subjects" style="margin-top:16px">☰ শ্রেণিভিত্তিক বিষয়</h3><div class="bx" id="sb"></div>
+<h3 class="hd" id="result">☰ পরীক্ষার ফলাফল</h3><div class="cd" style="max-width:440px"><input id="rs" placeholder="Student ID"><input id="rp" type="password" placeholder="PIN"><button class="bt" id="rb">ফলাফল দেখুন</button></div><div class="cd" id="ro" style="display:none;overflow-x:auto"></div>
+<h3 class="hd" id="admission">☰ ভর্তি আবেদন</h3><div class="cd" style="max-width:440px"><input id="an" placeholder="শিক্ষার্থীর নাম"><select id="ac"></select><input id="ag" placeholder="অভিভাবকের নাম"><input id="am" type="tel" placeholder="মোবাইল নম্বর"><textarea id="ad" placeholder="ঠিকানা"></textarea><button class="bt" id="ab2">আবেদন জমা দিন</button></div>
+<div id="gw"><h3 class="hd" id="gallery">☰ ফটোগ্যালারী</h3><div class="ph" id="ph"></div></div>
+<h3 class="hd" id="contact" style="margin-top:16px">☰ যোগাযোগ</h3><div class="r"><div class="bx" id="ct"></div><div id="mp"></div></div>
+</div>
+<div class="ft"><div class="w"><div><h4 id="fn"></h4><p id="fa" style="margin:0"></p></div><div><h4>দ্রুত লিংক</h4><a href="#notice">নোটিশ</a><a href="#result">রেজাল্ট</a><a href="#admission">ভর্তি</a></div><div><h4>যোগাযোগ</h4><div id="fc"></div></div></div></div>
+<div class="bf">© <span id="yr"></span> <span id="fn2"></span> · ডেভেলপার: <a href="https://www.hashan28.com">hashan28.com</a></div>
+
+<div class="mdl" id="lm"><div><h3 style="margin:0 0 8px">🔐 অ্যাডমিন লগইন</h3><input id="le" type="email" placeholder="ইমেইল"><input id="lp" type="password" placeholder="পাসওয়ার্ড"><button class="bt" id="ls">লগইন</button> <button class="bt s" data-x="lm">বাতিল</button></div></div>
+<div class="mdl big" id="nm"><div><h3 id="nt" style="margin:0"></h3><small id="nd" style="color:var(--b)"></small><p id="nx"></p><button class="bt s" data-x="nm">বন্ধ করুন</button></div></div>
+<div class="mdl lb" id="im" data-x="im"><img id="bi" alt="ছবি"></div>
+<div class="ov" id="ov"><div><b>স্কুল ম্যানেজমেন্ট</b><button class="bt s" id="cb">← ওয়েবসাইটে ফিরুন</button></div><iframe id="fr" title="অ্যাপ"></iframe></div>
+<div id="tt"></div>
+<script>
+/* ===== এখানে বদলান ===== */
+const CFG={
+ name:"আপনার স্কুলের নাম",addr:"গ্রাম, ইউনিয়ন, বিরামপুর, দিনাজপুর",phone:"০১XXXXXXXXX",email:"info@example.com",
+ logo:"",                                   /* লোগোর ছবির লিংক */
+ slides:[{t:"স্বাগতম",s:"মানসম্মত শিক্ষা, নিরাপদ পরিবেশ",img:""},{t:"ভর্তি চলছে",s:"নতুন শিক্ষাবর্ষে আপনার সন্তানকে ভর্তি করান",img:""},{t:"আমাদের লক্ষ্য",s:"আলোকিত মানুষ গড়া",img:""}],
+ history:"এখানে প্রতিষ্ঠানের ইতিহাস লিখুন।",
+ head:{name:"প্রধান শিক্ষকের নাম",msg:"এখানে প্রধান শিক্ষকের বাণী লিখুন।",img:""},
+ asst:{name:"সহকারী প্রধান শিক্ষকের নাম",msg:"এখানে বাণী লিখুন।",img:""},
+ edu:["শিক্ষা কার্যক্রম ১","শিক্ষা কার্যক্রম ২","শিক্ষা কার্যক্রম ৩"],
+ links:[["শিক্ষা মন্ত্রণালয়","https://moedu.gov.bd"],["প্রাথমিক ও গণশিক্ষা অধিদপ্তর","https://dpe.gov.bd"],["জাতীয় তথ্য বাতায়ন","https://bangladesh.gov.bd"]],
+ blog:[],                                   /* [{t:"শিরোনাম",d:"ছোট বিবরণ",img:"লিংক"}] */
+ gallery:[],                                /* ["img/1.jpg","img/2.jpg"] */
+ facebook:"https://facebook.com",mapEmbed:"",
+ appUrl:"school.html",                      /* ম্যানেজমেন্ট অ্যাপের ফাইল */
+ fb:{apiKey:"AIzaSyBlz3SJwscg0ebDXiZu3I6fpQC0qdxv0zI",authDomain:"mcs-habibpur.firebaseapp.com",projectId:"mcs-habibpur",storageBucket:"mcs-habibpur.firebasestorage.app",messagingSenderId:"95047938599",appId:"1:95047938599:web:754724808fed90ef2ed402"}
+};
+/* ======================= */
+const $=i=>document.getElementById(i),V='https://www.gstatic.com/firebasejs/10.12.0/';
+const E=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const bn=x=>String(x).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
+const toast=m=>{const t=$('tt');t.textContent=m;t.style.display='block';setTimeout(()=>t.style.display='none',2600)};
+const img=(box,u,emo)=>{if(u){const i=E('img');i.src=u;i.alt='';box.replaceChildren(i)}else box.textContent=emo};
+let F;async function fb(){if(F)return F;const[a,u,f]=await Promise.all([import(V+'firebase-app.js'),import(V+'firebase-auth.js'),import(V+'firebase-firestore.js')]);const app=a.initializeApp(CFG.fb);return F={u,f,auth:u.getAuth(app),db:f.getFirestore(app)}}
+async function col(n){const x=await fb();return(await x.f.getDocs(x.f.collection(x.db,n))).docs.map(d=>({id:d.id,...d.data()}))}
+function show(t,d,x){$('nt').textContent=t;$('nd').textContent=bn(d||'');$('nx').textContent=x||'';$('nm').classList.add('on')}
+function fill(){document.title=CFG.name;$('sn').textContent=CFG.name;$('sa').textContent=CFG.addr;$('fn').textContent=$('fn2').textContent=CFG.name;$('fa').textContent=CFG.addr;$('yr').textContent=bn(new Date().getFullYear());
+ img($('lg'),CFG.logo,'🏫');$('hist').textContent=CFG.history;$('hm').textContent=CFG.head.name+' — '+CFG.head.msg;$('am2').textContent=CFG.asst.name+' — '+CFG.asst.msg;img($('ha'),CFG.head.img,'👤');img($('aa'),CFG.asst.img,'👤');
+ $('edu').replaceChildren(...CFG.edu.map(x=>{const r=E('div','ed');r.append(E('b','','➤'),E('span','',x));return r}));
+ $('links').replaceChildren(...CFG.links.map(l=>{const a=E('a','','▸ '+l[0]);a.href=l[1];a.target='_blank';a.rel='noopener';return a}));
+ $('fbl').href=CFG.facebook;$('ac').replaceChildren(...['প্রাক-প্রাথমিক','প্রথম','দ্বিতীয়','তৃতীয়','চতুর্থ','পঞ্চম'].map(x=>E('option','',x)));
+ $('ct').replaceChildren(E('p','','📍 '+CFG.addr),E('p','','📞 '+CFG.phone),E('p','','✉️ '+CFG.email));$('fc').replaceChildren(E('p','','📞 '+CFG.phone),E('p','','✉️ '+CFG.email));
+ if(CFG.mapEmbed){const i=E('iframe');i.src=CFG.mapEmbed;i.loading='lazy';i.style.cssText='width:100%;height:240px;border:0';$('mp').replaceChildren(i)}
+ if(CFG.gallery.length)$('ph').replaceChildren(...CFG.gallery.map(s=>{const i=E('img');i.src=s;i.alt='ছবি';i.loading='lazy';i.onclick=()=>{$('bi').src=s;$('im').classList.add('on')};return i}));else $('gw').style.display='none';
+ if(CFG.blog.length)$('blog').replaceChildren(...CFG.blog.map(b=>{const c=E('div','c');if(b.img){const i=E('img');i.src=b.img;i.alt='';i.style.cssText='width:100%;height:120px;object-fit:cover';c.append(i)}c.append(E('h4','',b.t),E('small','',b.d||''));return c}));else $('blogw').style.display='none';
+ $('sl').replaceChildren(...CFG.slides.map((s,i)=>{const d=E('div','s'+(i?'':' on'));if(s.img)d.style.backgroundImage='url('+s.img+')';else d.style.background=['#1a3a8f','#7a2e0e','#0b6b4f'][i%3];const b=E('div');b.append(E('h2','',s.t),E('p','',s.s));d.append(b);return d}))}
+let si=0;setInterval(()=>{const s=document.querySelectorAll('.sl .s');if(s.length<2)return;s[si].classList.remove('on');si=(si+1)%s.length;s[si].classList.add('on')},4500);
+async function load(){
+ try{const x=await fb(),s=await x.f.getDoc(x.f.doc(x.db,'settings','main'));if(s.exists()){const d=s.data();if(d.school_name)CFG.name=d.school_name;if(d.contact_address)CFG.addr=d.contact_address;if(d.contact_phone)CFG.phone=d.contact_phone;fill()}}catch(e){}
+ try{const N=(await col('notices')).sort((a,b)=>String(b.date).localeCompare(String(a.date)));const row=n=>{const a=E('a','','📢 '+n.title);a.onclick=()=>show(n.title,n.date,n.details);return a};
+  $('nl').replaceChildren(...(N.length?N.map(row):[E('p','','কোনো নোটিশ নেই')]));$('nb').replaceChildren(...(N.length?N.map(row):[E('span','','কোনো নোটিশ নেই')]));
+  if(N.length)$('mq').textContent='📢 '+N.slice(0,3).map(n=>n.title).join('   •   ')}catch(e){$('nl').textContent='নোটিশ লোড হয়নি';$('nb').textContent='লোড হয়নি'}
+ try{const T=await col('teachers');$('tl').replaceChildren(...(T.length?T.map(t=>{const c=E('div','c');c.append(E('div','av2','🧑‍🏫'),E('h4','',t.name),E('small','',t.post||''));return c}):[E('p','','তালিকা শীঘ্রই আসছে')]))}catch(e){$('tl').textContent='লোড হয়নি'}
+ try{const B=await col('subjects'),m={};B.forEach(b=>(m[b.cls]??=[]).push(b.name));const k=Object.keys(m);$('sb').replaceChildren(...(k.length?k.map(c=>{const r=E('div','ed');r.append(E('b','',c+':'),E('span','',m[c].join(', ')));return r}):[E('p','','তথ্য শীঘ্রই আসছে')]))}catch(e){$('sb').textContent='লোড হয়নি'}}
+$('rb').onclick=async()=>{const id=$('rs').value.trim(),pin=$('rp').value.trim(),o=$('ro');if(!id||!pin||(id+pin).includes('/'))return toast('ID ও PIN সঠিকভাবে দিন');
+ try{const x=await fb(),d=await x.f.getDoc(x.f.doc(x.db,'results',id+'-'+pin));if(!d.exists())return toast('ফলাফল পাওয়া যায়নি');const r=d.data();let T=0;const tb=E('table'),h=E('tr');['বিষয়','পূর্ণমান','প্রাপ্ত'].forEach(z=>h.append(E('th','',z)));tb.append(h);
+  r.rows.forEach(w=>{const tr=E('tr');tr.append(E('td','',w.subject),E('td','',bn(w.full)),E('td','',bn(w.got)));tb.append(tr);T+=+w.got||0});
+  o.replaceChildren(E('h3','',`${r.name} · ${r.cls} · রোল ${bn(r.roll||'')}`),E('p','',r.exam||''),tb,E('p','','মোট: '+bn(T)));o.style.display='block'}catch(e){toast('ফলাফল লোড হয়নি')}};
+$('ab2').onclick=async()=>{const a={name:$('an').value.trim(),class:$('ac').value,guardian:$('ag').value.trim(),mobile:$('am').value.trim(),address:$('ad').value.trim(),date:new Date().toISOString().slice(0,10)};
+ if(!a.name||!a.mobile)return toast('নাম ও মোবাইল দিন');try{const x=await fb();await x.f.addDoc(x.f.collection(x.db,'admissions'),a);toast('আবেদন জমা হয়েছে, ধন্যবাদ');['an','ag','am','ad'].forEach(i=>$(i).value='')}catch(e){toast('জমা হয়নি, আবার চেষ্টা করুন')}};
+$('lb').onclick=()=>$('lm').classList.add('on');
+document.addEventListener('click',e=>{const x=e.target.closest('[data-x]');if(x&&(x.tagName=='BUTTON'||e.target==x))$(x.dataset.x).classList.remove('on')});
+$('ls').onclick=async()=>{try{const x=await fb();await x.u.signInWithEmailAndPassword(x.auth,$('le').value,$('lp').value);$('lm').classList.remove('on');$('lp').value='';$('fr').src=CFG.appUrl;$('ov').classList.add('on')}catch(e){toast('লগইন হয়নি: ইমেইল/পাসওয়ার্ড দেখুন')}};
+$('cb').onclick=()=>{$('ov').classList.remove('on');$('fr').src='about:blank'};
+fill();load();
+</script></body></html>
